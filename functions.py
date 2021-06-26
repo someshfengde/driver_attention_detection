@@ -22,7 +22,7 @@ output_label = {'c0': 'normal driving',
 'c9': 'talking to passenger'}
 
 def predict_with_image(image):
-    image = Image(image)
+    image = Image.open(image).convert('RGB')
     model = load_model()
     prediction  = model.predict(image)
     label = f'model predicted uploaded image is {output_label[prediction[0]]} with probability {prediction[2].max()}'
