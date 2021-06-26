@@ -4,7 +4,6 @@ from PIL import Image
 
 def label_func(x): return x.parent.name    
 def load_model():
-    label_func = label_func()
     model = load_learner('./export.pkl')
     return model
 
