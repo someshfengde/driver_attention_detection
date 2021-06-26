@@ -9,6 +9,8 @@ The project stands based on the kaggle distracted driver detection problem
 ## link to binder app 
     https://mybinder.org/v2/gh/someshfengde/driver_attention_detection/HEAD?urlpath=%2Fvoila%2Frender%2Fdeploying_driver_attention_detection_.ipynb
 
+
+## click here for launching binder app 
 ## [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/someshfengde/driver_attention_detection/HEAD?urlpath=%2Fvoila%2Frender%2Fdeploying_driver_attention_detection_.ipynb)
 
 ## thanks to Fast.ai
