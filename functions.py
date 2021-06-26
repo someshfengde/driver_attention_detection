@@ -2,9 +2,9 @@ from fastai.vision.all import *
 from fastai import *  
 from PIL import Image
 
-
+def label_func(x): return x.parent.name    
 def load_model():
-    def label_func(x): return x.parent.name    
+    label_func = label_func()
     model = load_learner('./export.pkl')
     return model
 
@@ -23,6 +23,7 @@ output_label = {'c0': 'normal driving',
 'c9': 'talking to passenger'}
 
 def predict_with_image(image):
+    
     model = load_model()
     prediction  = model.predict(image)
     label = f'model predicted uploaded image is {output_label[prediction[0]]} with probability {prediction[2].max()}'
